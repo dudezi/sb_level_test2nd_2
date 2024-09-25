@@ -24,6 +24,9 @@ public class SecurityConfig {
                         .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
                         .logoutSuccessUrl("/")
                         .invalidateHttpSession(true))
+                .formLogin((formLogin) -> formLogin
+                        .loginPage("/user/login")
+                        .defaultSuccessUrl("/"))
         ;
         return http.build();
     }
