@@ -32,8 +32,10 @@
 - ![게시글 등록 폼 페이지.jpg](img%2F%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EB%93%B1%EB%A1%9D%20%ED%8F%BC%20%ED%8E%98%EC%9D%B4%EC%A7%80.jpg)
 
 - 게시글 상세 페이지
-- ![게시글 상세 페이지(작성자).jpg](img%2F%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%83%81%EC%84%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%28%EC%9E%91%EC%84%B1%EC%9E%90%29.jpg)
-- ![게시글 상세 페이지(비작성자).jpg](img%2F%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%83%81%EC%84%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%28%EB%B9%84%EC%9E%91%EC%84%B1%EC%9E%90%29.jpg)
+- (작성자)
+![게시글 상세 페이지(작성자).jpg](img%2F%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%83%81%EC%84%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%28%EC%9E%91%EC%84%B1%EC%9E%90%29.jpg)
+- (비작성자)
+![게시글 상세 페이지(비작성자).jpg](img%2F%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%83%81%EC%84%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80%28%EB%B9%84%EC%9E%91%EC%84%B1%EC%9E%90%29.jpg)
 
 - 로그인 페이지
 ![로그인 페이지.jpg](img%2F%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%8E%98%EC%9D%B4%EC%A7%80.jpg)
