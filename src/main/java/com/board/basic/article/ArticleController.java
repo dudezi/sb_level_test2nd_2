@@ -1,9 +1,10 @@
 package com.board.basic.article;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,5 +41,21 @@ public class ArticleController {
         return "article_detail";
     }
 
+    @GetMapping("/modify/{id}")
+    public String modify(ArticleForm articleForm, @PathVariable("id") Integer id) {
+        Article article = this.articleService.getArticle(id);
+        articleForm.setTitle(article.getTitle());
+        articleForm.setContent(article.getContent());
+        return "article_form";
+    }
 
+    @PostMapping("/modify/{id}")
+    public String modify(@Valid ArticleForm articleForm, @PathVariable("id") Integer id, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "article_form";
+        }
+        Article article = this.articleService.getArticle(id);
+        this.articleService.modify(article, articleForm.getTitle(), articleForm.getContent());
+        return "redirect:/article/detail/{id}";
+    }
 }

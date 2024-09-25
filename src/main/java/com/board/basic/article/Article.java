@@ -22,4 +22,5 @@ public class Article {
 
     private LocalDateTime createDate;
 
+    private LocalDateTime modifyDate;
 }
