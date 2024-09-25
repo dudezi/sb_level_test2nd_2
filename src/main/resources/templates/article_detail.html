@@ -6,10 +6,10 @@
         <a th:href="@{/article/list}">목록</a>
     </button>
     <button TYPE="submit">
-        <a th:href="@{|/article/modify/${article.id}|}">수정</a>
+        <a th:href="@{|/article/modify/${article.id}|}" sec:authorize="isAuthenticated()" th:if="${article.author != null and #authentication.getPrincipal().getUsername() == article.author.username}">수정</a>
     </button>
     <button TYPE="submit">
-        <a th:href="@{|/article/delete/${article.id}|}">삭제</a>
+        <a th:href="@{|/article/delete/${article.id}|}" sec:authorize="isAuthenticated()" th:if="${article.author != null and #authentication.getPrincipal().getUsername() == article.author.username}">삭제</a>
     </button>
 </div>
 </html>
